@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msvalidate.01" content="1F14EEA4478F7A176F2E0451992C984C">
+    <meta name="description" content="Resize images for LinkedIn banners, profiles, and posts. Free, browser-based, instant.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Resize Image for LinkedIn — Free Online Tool">
+    <meta property="og:description" content="Resize images for LinkedIn banners, profiles, and posts. Free, browser-based, instant.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resizenow.net/resize-image-for-linkedin/">
+    <link rel="canonical" href="https://resizenow.net/resize-image-for-linkedin/">
+    <title>Resize Image for LinkedIn — Free Online Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9NW1GSG04"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-Z9NW1GSG04");</script>
+    <style>
+        :root{--primary:#4F46E5;--primary-dark:#4338CA;--bg:#FAFAFA;--card-bg:#FFFFFF;--text:#1E293B;--text-secondary:#64748B;--border:#E2E8F0;--radius:24px;--radius-sm:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+header{background:#1E293B;color:#F1F5F9;padding:16px 0;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+header .container{display:flex;justify-content:space-between;align-items:center}
+header nav{display:flex;gap:24px}header nav a{color:#94A3B8;text-decoration:none;font-size:.9rem;font-weight:500}header nav a:hover{color:#fff}
+.hero{padding:60px 0 40px;text-align:center}
+.hero h1{font-size:2.5rem;font-weight:800;margin-bottom:16px;line-height:1.2}
+.hero p{color:var(--text-secondary);font-size:1.1rem;max-width:600px;margin:0 auto}
+.tool-area{max-width:700px;margin:0 auto 40px;padding:0 24px}
+.drop-zone{border:2px dashed var(--border);border-radius:32px;padding:40px 20px;text-align:center;cursor:pointer;background:var(--card-bg);transition:all .2s}
+.drop-zone:hover{border-color:var(--primary);background:#F5F3FF}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.btn{padding:14px 28px;border:none;border-radius:var(--radius-sm);font-size:1rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s}.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--primary);color:#fff;height:56px}.btn-primary:hover{background:var(--primary-dark)}
+.btn-secondary{background:var(--card-bg);color:var(--text);border:1px solid var(--border)}
+.controls{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-top:20px}
+.control-row{display:flex;gap:16px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.control-row label{font-weight:600;font-size:.9rem;min-width:80px}
+.control-row input{width:120px;padding:12px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:1rem;font-family:inherit}
+.control-row select{flex:1;padding:12px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:1rem;font-family:inherit}
+.toggle{display:flex;align-items:center;gap:8px;cursor:pointer}
+.toggle input{width:18px;height:18px}
+.preview-area{display:none;margin-top:20px}
+.preview-area img{max-width:100%;border-radius:var(--radius);border:1px solid var(--border)}
+.stats{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;margin:16px 0;font-size:.9rem}
+.section{padding:40px 0}.section h2{font-size:1.5rem;margin-bottom:20px}
+.size-table{width:100%;border-collapse:collapse;margin:20px 0}
+.size-table th,.size-table td{padding:12px 16px;border:1px solid var(--border);text-align:left;font-size:.9rem}
+.size-table th{background:var(--card-bg);font-weight:600}
+.faq-section{padding:40px 0;text-align:left}.faq-section h2{font-size:1.5rem;margin-bottom:24px;text-align:center}
+.faq-item{margin-bottom:20px;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.faq-item h3{font-size:1rem;margin-bottom:8px;color:var(--primary)}
+.faq-item p{color:var(--text-secondary);font-size:.9rem}
+.cross-site{max-width:700px;margin:0 auto 40px;padding:20px;background:#F5F0FF;border-left:3px solid var(--primary);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.cross-site strong{color:var(--primary)}.cross-site a{color:var(--primary);font-weight:600}
+.related-tools{background:var(--bg);border-top:1px solid var(--border);padding:40px 0}
+.related-tools ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:600px;margin:0 auto}
+.related-tools a{color:var(--primary);text-decoration:none;font-weight:500;padding:12px 16px;display:block;background:var(--card-bg);border-radius:var(--radius-sm);border:1px solid var(--border);transition:all .15s}
+.related-tools a:hover{border-color:var(--primary);box-shadow:0 4px 12px rgba(79,70,229,.1)}
+footer{background:#1E293B;color:#94A3B8;padding:32px 0;text-align:center;font-size:.85rem}
+footer a{color:#CBD5E1;text-decoration:none}
+.breadcrumb{font-size:.85rem;color:var(--text-secondary);padding:16px 0;max-width:960px;margin:0 auto}
+.breadcrumb a{color:var(--primary);text-decoration:none}
+@media(max-width:640px){.hero h1{font-size:1.8rem}.control-row{flex-direction:column}.related-tools ul{grid-template-columns:1fr}}
+    </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Resize Image for LinkedIn — Free Online Tool","url":"https://resizenow.net/resize-image-for-linkedin/","description":"Resize images for LinkedIn banners, profiles, and posts. Free, browser-based, instant.","applicationCategory":"MultimediaApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What size should a LinkedIn profile picture be?","acceptedAnswer":{"@type":"Answer","text":"LinkedIn profile pictures should be 400x400 pixels. Professional headshots work best."}},{"@type":"Question","name":"What size should a LinkedIn banner be?","acceptedAnswer":{"@type":"Answer","text":"LinkedIn banners should be 1584x396 pixels. Use this space to showcase your expertise or brand."}},{"@type":"Question","name":"What size should LinkedIn post images be?","acceptedAnswer":{"@type":"Answer","text":"LinkedIn post images should be 1200x627 pixels for optimal display in the feed."}},{"@type":"Question","name":"What's the best format for LinkedIn?","acceptedAnswer":{"@type":"Answer","text":"JPG is recommended for photos, PNG for graphics with text or logos."}}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://resizenow.net/"},{"@type":"ListItem","position":2,"name":"Resize Image for LinkedIn","item":"https://resizenow.net/resize-image-for-linkedin/"}]}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" style="font-size:1.2rem;font-weight:700;color:#F1F5F9;text-decoration:none">Resize<span style="color:#818CF8">Now</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/resize-image-for-instagram/">Instagram</a>
+                <a href="/resize-image-for-discord/">Discord</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumb"><a href="/">Home</a> / Resize Image for LinkedIn</div>
+        </div>
+        <section class="hero">
+            <h1>Resize Image for LinkedIn</h1>
+            <p>Resize images for LinkedIn banners, profiles, and posts. Free, browser-based, instant.</p>
+        </section>
+        <section class="tool-area">
+            <div class="drop-zone" id="dropZone">
+                <p style="font-size:2rem;margin-bottom:8px">📁</p>
+                <p style="font-weight:600;margin-bottom:4px">Drop image here or click to upload</p>
+                <p style="color:var(--text-secondary);font-size:.85rem">Supports PNG, JPEG, WebP</p>
+                <input type="file" id="fileInput" accept="image/*" style="display:none">
+            </div>
+            <div class="controls" id="controls" style="display:none">
+                <div class="control-row">
+                    <label>Preset:</label>
+                    <select id="presetSelect">
+                        <option value="">Custom Size</option>
+                        <option value="instagram-post">Instagram Post (1080x1080)</option><option value="instagram-story">Instagram Story (1080x1920)</option><option value="instagram-reel">Instagram Reel Cover (1080x1920)</option><option value="instagram-profile">Instagram Profile (320x320)</option><option value="instagram-carousel">Instagram Carousel (1080x1080)</option><option value="tiktok-video">TikTok Video (1080x1920)</option><option value="tiktok-profile">TikTok Profile (200x200)</option><option value="tiktok-cover">TikTok Cover (1080x1920)</option><option value="youtube-thumbnail">YouTube Thumbnail (1280x720)</option><option value="youtube-banner">YouTube Banner (2560x1440)</option><option value="youtube-profile">YouTube Profile (800x800)</option><option value="youtube-shorts">YouTube Shorts (1080x1920)</option><option value="discord-avatar">Discord Avatar (512x512)</option><option value="discord-banner">Discord Banner (680x240)</option><option value="discord-server-icon">Discord Server Icon (512x512)</option><option value="discord-emoji">Discord Emoji (128x128)</option><option value="linkedin-banner">LinkedIn Banner (1584x396)</option><option value="linkedin-profile">LinkedIn Profile (400x400)</option><option value="linkedin-post">LinkedIn Post (1200x627)</option><option value="linkedin-company-logo">LinkedIn Company Logo (300x300)</option><option value="facebook-cover">Facebook Cover (820x312)</option><option value="facebook-profile">Facebook Profile (170x170)</option><option value="facebook-post">Facebook Post (1200x630)</option><option value="facebook-event">Facebook Event (1920x1005)</option><option value="twitter-header">X Header (1500x500)</option><option value="twitter-post">X Post (1200x675)</option><option value="twitter-profile">X Profile (400x400)</option><option value="pinterest-pin">Pinterest Pin (1000x1500)</option><option value="pinterest-profile">Pinterest Profile (165x165)</option><option value="pinterest-board">Pinterest Board (222x150)</option><option value="whatsapp-profile">WhatsApp Profile (500x500)</option><option value="whatsapp-status">WhatsApp Status (1080x1920)</option><option value="snapchat-icon">Snapchat Icon (320x320)</option><option value="snapchat-story">Snapchat Story (1080x1920)</option>
+                    </select>
+                </div>
+                <div class="control-row">
+                    <label>Width:</label>
+                    <input type="number" id="widthInput" placeholder="Width (px)">
+                    <label>Height:</label>
+                    <input type="number" id="heightInput" placeholder="Height (px)">
+                    <div class="toggle">
+                        <input type="checkbox" id="lockRatio" checked>
+                        <label for="lockRatio" style="font-size:.85rem;min-width:auto">Lock Ratio</label>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <button class="btn btn-primary" id="resizeBtn">Resize Image</button>
+                    <button class="btn btn-secondary" id="resetBtn">🔄 Start Over</button>
+                </div>
+            </div>
+            <div class="preview-area" id="previewArea">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <div style="text-align:center"><p style="font-size:.8rem;color:var(--text-secondary);margin-bottom:8px">Original</p><img id="originalPreview"></div>
+                    <div style="text-align:center"><p style="font-size:.8rem;color:var(--text-secondary);margin-bottom:8px">Resized</p><img id="resizedPreview"></div>
+                </div>
+                <div class="stats" id="stats"></div>
+                <div class="btn-row">
+                    <button class="btn btn-primary" id="downloadPng">⬇ Download PNG</button>
+                    <button class="btn btn-secondary" id="downloadJpg">⬇ Download JPG</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>About LinkedIn Image Sizes</h2>
+                <p>LinkedIn uses different image sizes for profile pictures, banners, and post images. Professional images are especially important on LinkedIn as it's a career-focused platform. Using the correct dimensions ensures your profile looks polished and professional.</p>
+                
+        <h2>LinkedIn Image Sizes</h2>
+        <table class="size-table">
+            <thead><tr><th>Type</th><th>Dimensions</th><th>Ratio</th></tr></thead>
+            <tbody><tr><td>Banner</td><td>1584 x 396</td><td>4:1</td></tr><tr><td>Profile Picture</td><td>400 x 400</td><td>1:1</td></tr><tr><td>Post Image</td><td>1200 x 627</td><td>1.91:1</td></tr><tr><td>Company Logo</td><td>300 x 300</td><td>1:1</td></tr><tr><td>Company Cover</td><td>1128 x 191</td><td>5.9:1</td></tr></tbody>
+        </table>
+                <h2>How to Resize</h2>
+                <p>Step 1: Upload your image to the tool above</p><p>Step 2: Select a LinkedIn preset (Banner, Profile, or Post)</p><p>Step 3: Preview the resized image</p><p>Step 4: Download and upload to LinkedIn</p>
+                <h2>Tips</h2>
+                <p>LinkedIn is a professional platform, so use high-quality, professional images. For banners, showcase your expertise, industry, or personal brand. For profile pictures, use a professional headshot with good lighting.</p>
+            </div>
+        </section>
+        <div class="cross-site">
+            <strong>Pro Tip</strong> — Need to compress your resized image? Try <a href="https://compressnow.net">CompressNow</a>. Need resume content? <a href="https://cvbuild-ai.com">CVBuild-AI</a>. Need emails? <a href="https://messagegen-ai.com">MessageGen-AI</a>. Need tone adjustment? <a href="https://tonemodifier.com">ToneModifier</a>.
+        </div>
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item"><h3>What size should a LinkedIn profile picture be?</h3><p>LinkedIn profile pictures should be 400x400 pixels. Professional headshots work best.</p></div><div class="faq-item"><h3>What size should a LinkedIn banner be?</h3><p>LinkedIn banners should be 1584x396 pixels. Use this space to showcase your expertise or brand.</p></div><div class="faq-item"><h3>What size should LinkedIn post images be?</h3><p>LinkedIn post images should be 1200x627 pixels for optimal display in the feed.</p></div><div class="faq-item"><h3>What's the best format for LinkedIn?</h3><p>JPG is recommended for photos, PNG for graphics with text or logos.</p></div>
+            </div>
+        </section>
+        <section class="related-tools">
+            <div class="container">
+                <h2 style="text-align:center;margin-bottom:20px">Related Tools</h2>
+                <ul><li><a href="/whatsapp-status-size/">WhatsApp Status Size</a></li><li><a href="/instagram-profile-picture-size/">Instagram Profile Picture Size</a></li><li><a href="/pinterest-pin-size/">Pinterest Pin Size</a></li><li><a href="/resize-photo-online/">Resize Photo Online</a></li><li><a href="/youtube-shorts-thumbnail-size/">YouTube Shorts Thumbnail Size</a></li><li><a href="/tiktok-image-size-guide/">TikTok Image Size Guide</a></li></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ResizeNow. All rights reserved. | <a href="/">Home</a> | <a href="#faq">FAQ</a></p>
+            <p style="margin-top:8px">All processing happens locally in your browser. Your images are never uploaded.</p>
+        </div>
+    </footer>
+    <script>
+    const PRESETS = {"instagram-post": {"name": "Instagram Post", "width": 1080, "height": 1080, "platform": "Instagram", "ratio": "1:1"}, "instagram-story": {"name": "Instagram Story", "width": 1080, "height": 1920, "platform": "Instagram", "ratio": "9:16"}, "instagram-reel": {"name": "Instagram Reel Cover", "width": 1080, "height": 1920, "platform": "Instagram", "ratio": "9:16"}, "instagram-profile": {"name": "Instagram Profile", "width": 320, "height": 320, "platform": "Instagram", "ratio": "1:1"}, "instagram-carousel": {"name": "Instagram Carousel", "width": 1080, "height": 1080, "platform": "Instagram", "ratio": "1:1"}, "tiktok-video": {"name": "TikTok Video", "width": 1080, "height": 1920, "platform": "TikTok", "ratio": "9:16"}, "tiktok-profile": {"name": "TikTok Profile", "width": 200, "height": 200, "platform": "TikTok", "ratio": "1:1"}, "tiktok-cover": {"name": "TikTok Cover", "width": 1080, "height": 1920, "platform": "TikTok", "ratio": "9:16"}, "youtube-thumbnail": {"name": "YouTube Thumbnail", "width": 1280, "height": 720, "platform": "YouTube", "ratio": "16:9"}, "youtube-banner": {"name": "YouTube Banner", "width": 2560, "height": 1440, "platform": "YouTube", "ratio": "16:9"}, "youtube-profile": {"name": "YouTube Profile", "width": 800, "height": 800, "platform": "YouTube", "ratio": "1:1"}, "youtube-shorts": {"name": "YouTube Shorts", "width": 1080, "height": 1920, "platform": "YouTube", "ratio": "9:16"}, "discord-avatar": {"name": "Discord Avatar", "width": 512, "height": 512, "platform": "Discord", "ratio": "1:1"}, "discord-banner": {"name": "Discord Banner", "width": 680, "height": 240, "platform": "Discord", "ratio": "2.83:1"}, "discord-server-icon": {"name": "Discord Server Icon", "width": 512, "height": 512, "platform": "Discord", "ratio": "1:1"}, "discord-emoji": {"name": "Discord Emoji", "width": 128, "height": 128, "platform": "Discord", "ratio": "1:1"}, "linkedin-banner": {"name": "LinkedIn Banner", "width": 1584, "height": 396, "platform": "LinkedIn", "ratio": "4:1"}, "linkedin-profile": {"name": "LinkedIn Profile", "width": 400, "height": 400, "platform": "LinkedIn", "ratio": "1:1"}, "linkedin-post": {"name": "LinkedIn Post", "width": 1200, "height": 627, "platform": "LinkedIn", "ratio": "1.91:1"}, "linkedin-company-logo": {"name": "LinkedIn Company Logo", "width": 300, "height": 300, "platform": "LinkedIn", "ratio": "1:1"}, "facebook-cover": {"name": "Facebook Cover", "width": 820, "height": 312, "platform": "Facebook", "ratio": "2.63:1"}, "facebook-profile": {"name": "Facebook Profile", "width": 170, "height": 170, "platform": "Facebook", "ratio": "1:1"}, "facebook-post": {"name": "Facebook Post", "width": 1200, "height": 630, "platform": "Facebook", "ratio": "1.91:1"}, "facebook-event": {"name": "Facebook Event", "width": 1920, "height": 1005, "platform": "Facebook", "ratio": "1.91:1"}, "twitter-header": {"name": "X Header", "width": 1500, "height": 500, "platform": "X", "ratio": "3:1"}, "twitter-post": {"name": "X Post", "width": 1200, "height": 675, "platform": "X", "ratio": "16:9"}, "twitter-profile": {"name": "X Profile", "width": 400, "height": 400, "platform": "X", "ratio": "1:1"}, "pinterest-pin": {"name": "Pinterest Pin", "width": 1000, "height": 1500, "platform": "Pinterest", "ratio": "2:3"}, "pinterest-profile": {"name": "Pinterest Profile", "width": 165, "height": 165, "platform": "Pinterest", "ratio": "1:1"}, "pinterest-board": {"name": "Pinterest Board", "width": 222, "height": 150, "platform": "Pinterest", "ratio": "1.48:1"}, "whatsapp-profile": {"name": "WhatsApp Profile", "width": 500, "height": 500, "platform": "WhatsApp", "ratio": "1:1"}, "whatsapp-status": {"name": "WhatsApp Status", "width": 1080, "height": 1920, "platform": "WhatsApp", "ratio": "9:16"}, "snapchat-icon": {"name": "Snapchat Icon", "width": 320, "height": 320, "platform": "Snapchat", "ratio": "1:1"}, "snapchat-story": {"name": "Snapchat Story", "width": 1080, "height": 1920, "platform": "Snapchat", "ratio": "9:16"}};
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const controls = document.getElementById('controls');
+    const presetSelect = document.getElementById('presetSelect');
+    const widthInput = document.getElementById('widthInput');
+    const heightInput = document.getElementById('heightInput');
+    const lockRatio = document.getElementById('lockRatio');
+    const resizeBtn = document.getElementById('resizeBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const previewArea = document.getElementById('previewArea');
+    const originalPreview = document.getElementById('originalPreview');
+    const resizedPreview = document.getElementById('resizedPreview');
+    const stats = document.getElementById('stats');
+    const downloadPng = document.getElementById('downloadPng');
+    const downloadJpg = document.getElementById('downloadJpg');
+
+    let originalImage = null;
+    let originalWidth = 0;
+    let originalHeight = 0;
+    let resizedCanvas = null;
+
+    dropZone.addEventListener('click', () => fileInput.click());
+    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.style.borderColor = 'var(--primary)'; });
+    dropZone.addEventListener('dragleave', () => { dropZone.style.borderColor = 'var(--border)'; });
+    dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.style.borderColor = 'var(--border)'; if(e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]); });
+    fileInput.addEventListener('change', () => { if(fileInput.files.length) handleFile(fileInput.files[0]); });
+    presetSelect.addEventListener('change', () => { const p = PRESETS[presetSelect.value]; if(p) { widthInput.value = p.width; heightInput.value = p.height; } });
+    widthInput.addEventListener('input', () => { if(lockRatio.checked && originalWidth) { heightInput.value = Math.round(widthInput.value * originalHeight / originalWidth); } });
+    heightInput.addEventListener('input', () => { if(lockRatio.checked && originalHeight) { widthInput.value = Math.round(heightInput.value * originalWidth / originalHeight); } });
+    resizeBtn.addEventListener('click', resizeImage);
+    resetBtn.addEventListener('click', resetAll);
+    downloadPng.addEventListener('click', () => download('png'));
+    downloadJpg.addEventListener('click', () => download('jpeg'));
+
+    function handleFile(file) { if(!file.type.match(/^image\/(png|jpeg|webp)$/)) return; const reader = new FileReader(); reader.onload = e => { const img = new Image(); img.onload = () => { originalImage = img; originalWidth = img.width; originalHeight = img.height; originalPreview.src = e.target.result; widthInput.value = img.width; heightInput.value = img.height; dropZone.style.display = 'none'; controls.style.display = 'block'; }; img.src = e.target.result; }; reader.readAsDataURL(file); }
+
+    function resizeImage() { if(!originalImage) return; const w = parseInt(widthInput.value); const h = parseInt(heightInput.value); if(!w || !h) return; const canvas = document.createElement('canvas'); canvas.width = w; canvas.height = h; const ctx = canvas.getContext('2d'); ctx.drawImage(originalImage, 0, 0, w, h); resizedCanvas = canvas; resizedPreview.src = canvas.toDataURL(); const origSize = fileInput.files[0].size; const newSize = Math.round(canvas.toDataURL().length * 0.75); stats.innerHTML = '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><div><strong>Original:</strong> ' + originalWidth + ' x ' + originalHeight + '</div><div><strong>Resized:</strong> ' + w + ' x ' + h + '</div><div><strong>Original Size:</strong> ' + formatSize(origSize) + '</div><div><strong>New Size:</strong> ~' + formatSize(newSize) + '</div></div>'; previewArea.style.display = 'block'; }
+
+    function download(format) { if(!resizedCanvas) return; const link = document.createElement('a'); link.download = 'resized-' + fileInput.files[0].name.replace(/\.[^.]+$/, '') + '.' + (format === 'png' ? 'png' : 'jpg'); link.href = resizedCanvas.toDataURL('image/' + format, 0.92); link.click(); }
+
+    function resetAll() { originalImage = null; originalWidth = 0; originalHeight = 0; resizedCanvas = null; fileInput.value = ''; dropZone.style.display = 'block'; controls.style.display = 'none'; previewArea.style.display = 'none'; }
+
+    function formatSize(bytes) { if(bytes < 1024) return bytes + ' B'; if(bytes < 1048576) return (bytes/1024).toFixed(1) + ' KB'; return (bytes/1048576).toFixed(2) + ' MB'; }
+    </script>
+</body>
+</html>
