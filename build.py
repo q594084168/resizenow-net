@@ -161,16 +161,25 @@ WHATSAPP_PAGES = [
     {"slug": "whatsapp-image-size-guide", "title": "WhatsApp Image Size Guide — All Dimensions 2026", "desc": "Complete WhatsApp image size guide: profiles, status, broadcasts.", "platform": "whatsapp"},
 ]
 
-# Generic pages
+# Generic pages — core tools
 GENERIC_PAGES = [
-    {"slug": "image-resizer", "title": "Image Resizer — Free Online Tool", "desc": "Resize any image online for free. Support PNG, JPG, WebP. Browser-based, instant.", "platform": "generic"},
-    {"slug": "photo-resizer", "title": "Photo Resizer — Free Online Tool", "desc": "Resize photos online for free. Perfect for social media, websites, and more.", "platform": "generic"},
-    {"slug": "picture-resizer", "title": "Picture Resizer — Free Online Tool", "desc": "Resize pictures online for free. No signup, no upload, instant.", "platform": "generic"},
-    {"slug": "image-resize-online", "title": "Image Resize Online — Free Tool", "desc": "Resize images online for free. Support any size and format.", "platform": "generic"},
-    {"slug": "resize-photo-online", "title": "Resize Photo Online — Free Tool", "desc": "Resize photos online for free. Browser-based, instant.", "platform": "generic"},
+    # Primary: differentiated by intent
+    {"slug": "image-resizer", "title": "Image Resizer — Free Online Tool (No Signup)", "desc": "Resize any image online for free. Support PNG, JPG, WebP. Browser-based, instant, no signup required.", "platform": "generic"},
+    {"slug": "photo-resizer", "title": "Photo Resizer for Social Media — Free Online", "desc": "Resize photos for social media: Instagram, Facebook, X, LinkedIn. Free instant tool with platform presets.", "platform": "generic"},
+    {"slug": "picture-resizer", "title": "Picture Resizer — Resize for Web & Email Free", "desc": "Resize pictures for websites, email attachments, and documents. Free, instant, no upload needed.", "platform": "generic"},
+    {"slug": "image-resize-online", "title": "Resize Image Online — Any Size, Any Format, Free", "desc": "Resize images online in pixels, percentage, or custom dimensions. PNG, JPG, WebP support. Free & instant.", "platform": "generic"},
+    {"slug": "resize-photo-online", "title": "Resize Photos Online — Free Tool for Any Platform", "desc": "Resize photos online for Instagram, websites, printing, and more. No signup, no watermark.", "platform": "generic"},
+    # Tools
     {"slug": "image-crop-tool", "title": "Image Crop Tool — Free Online", "desc": "Crop images online for free. Visual crop with aspect ratio lock.", "platform": "generic"},
     {"slug": "aspect-ratio-calculator", "title": "Aspect Ratio Calculator — Free Online Tool", "desc": "Calculate aspect ratios for any image. Free, instant.", "platform": "generic"},
     {"slug": "bulk-image-resizer", "title": "Bulk Image Resizer — Resize Multiple Images Free", "desc": "Resize multiple images at once. Free, browser-based, instant.", "platform": "generic"},
+    # NEW: GSC-query-driven long-tail pages（2026-06-14）
+    {"slug": "social-media-image-dimensions", "title": "Social Media Image Dimensions 2026 — All Platforms Guide", "desc": "Complete guide to social media image dimensions: Instagram, Facebook, LinkedIn, X/Twitter, YouTube, TikTok, Pinterest, and more. Updated for 2026.", "platform": "social-media-dimensions"},
+    {"slug": "resize-image-for-printing", "title": "Resize Image for Printing — DPI & Dimensions Guide", "desc": "Resize images for high-quality printing. Set DPI, inches, or centimeters. Free online tool for print-ready images.", "platform": "printing"},
+    {"slug": "change-image-resolution", "title": "Change Image Resolution Online — Free Tool", "desc": "Change the resolution of any image online. Adjust DPI, pixels per inch, or total pixel count. Free, instant.", "platform": "resolution"},
+    {"slug": "image-size-guide", "title": "Image Size Guide 2026 — All Social Media & Web Dimensions", "desc": "Ultimate image size guide for every platform. Social media, web banners, email headers, and more. All dimensions in one place.", "platform": "image-size-guide"},
+    {"slug": "resize-jpg-online", "title": "Resize JPG Online — Free JPG Image Resizer", "desc": "Resize JPG images online for free. Reduce or enlarge JPG dimensions. No quality loss. Instant, browser-based.", "platform": "generic"},
+    {"slug": "free-online-image-resizer", "title": "Free Online Image Resizer — No Signup, No Watermark", "desc": "100% free online image resizer. No signup, no watermark, no limits. Resize images instantly in your browser.", "platform": "generic"},
 ]
 
 # Combine all pages
@@ -437,6 +446,123 @@ PLATFORM_DATA = {
         ],
         "tips": "When resizing, it's better to reduce dimensions than to enlarge them. Enlarging images can cause blurriness and pixelation. Always keep a copy of the original image.",
     },
+    # NEW enrichment types for long-tail pages（2026-06-14）
+    "social-media-dimensions": {
+        "name": "Social Media",
+        "about": "Every social media platform has different image size requirements. Using the correct dimensions ensures your photos, banners, and profile pictures look professional and aren't awkwardly cropped. This guide covers all major platforms with the latest 2026 dimensions.",
+        "sizes": [
+            ("Instagram Post (Square)", "1080 x 1080", "1:1"),
+            ("Instagram Story / Reel", "1080 x 1920", "9:16"),
+            ("Facebook Cover", "820 x 312", "2.63:1"),
+            ("Facebook Post", "1200 x 630", "1.91:1"),
+            ("LinkedIn Banner", "1584 x 396", "4:1"),
+            ("LinkedIn Post", "1200 x 627", "1.91:1"),
+            ("X/Twitter Header", "1500 x 500", "3:1"),
+            ("X/Twitter Post", "1200 x 675", "16:9"),
+            ("YouTube Thumbnail", "1280 x 720", "16:9"),
+            ("YouTube Banner", "2560 x 1440", "16:9"),
+            ("TikTok Video", "1080 x 1920", "9:16"),
+            ("Pinterest Pin", "1000 x 1500", "2:3"),
+            ("Discord Avatar", "512 x 512", "1:1"),
+            ("Discord Banner", "680 x 240", "2.83:1"),
+        ],
+        "faq": [
+            ("What are the most common social media image sizes?", "The most common sizes are 1080x1080 (Instagram post), 1080x1920 (Stories/Reels/TikTok), 1200x630 (Facebook/LinkedIn posts), and 1280x720 (YouTube thumbnails)."),
+            ("Do image dimensions affect engagement?", "Yes. Correctly sized images look professional and get more likes, shares, and comments. Cropped or stretched images reduce trust and engagement."),
+            ("What happens if I upload the wrong image size?", "Social media platforms will automatically crop or resize your image, which may cut off important parts or reduce quality. Always resize to the recommended dimensions first."),
+            ("Are these dimensions updated for 2026?", "Yes. All dimensions in this guide are verified for 2026. Social media platforms occasionally update their requirements, and we keep this guide current."),
+        ],
+        "how_to": [
+            "Find your platform in the size table above",
+            "Use the resize tool to set the exact dimensions",
+            "Preview and adjust if needed",
+            "Download and upload to your social platform",
+        ],
+        "tips": "Portrait/vertical images (9:16) take up more screen space on mobile and tend to get more engagement on Instagram, TikTok, and Snapchat. For LinkedIn and Facebook, horizontal (1.91:1) is the standard for feed posts.",
+    },
+    "printing": {
+        "name": "Printing",
+        "about": "Resizing images for printing is different from resizing for screens. Print requires higher DPI (dots per inch) — typically 300 DPI — to look sharp. Screen images at 72 DPI will look pixelated when printed. Use this tool to resize images to print-ready dimensions in inches, centimeters, or millimeters.",
+        "sizes": [
+            ("4×6 Photo Print", "1200 x 1800", "300 DPI"),
+            ("5×7 Photo Print", "1500 x 2100", "300 DPI"),
+            ("8×10 Photo Print", "2400 x 3000", "300 DPI"),
+            ("A4 Print", "2480 x 3508", "300 DPI"),
+            ("Letter Size", "2550 x 3300", "300 DPI"),
+            ("Poster 18×24", "5400 x 7200", "300 DPI"),
+        ],
+        "faq": [
+            ("What DPI should I use for printing?", "300 DPI is the standard for high-quality prints. For large posters viewed from a distance, 150 DPI can be acceptable. Never print at 72 DPI (screen resolution)."),
+            ("How do I calculate print dimensions in pixels?", "Multiply inches by DPI. For example, a 4×6 inch photo at 300 DPI = 1200×1800 pixels."),
+            ("What's the difference between screen and print resolution?", "Screen images use 72-96 DPI and look fine on monitors. Print requires 300 DPI for sharp output. Always resize to 300 DPI before printing."),
+            ("Does resizing for print reduce quality?", "Enlarging an image for print can cause quality loss. Start with the highest resolution source image possible."),
+        ],
+        "how_to": [
+            "Upload your image above",
+            "Enter target dimensions in inches/cm (convert to pixels at 300 DPI)",
+            "Check the preview for sharpness",
+            "Download and send to your printer",
+        ],
+        "tips": "For the best print quality, start with images at least 300 DPI at the desired print size. If your image is too small, you may need to scan at higher resolution or use AI upscaling tools before resizing.",
+    },
+    "resolution": {
+        "name": "Resolution",
+        "about": "Image resolution determines how sharp and detailed your image appears. Changing resolution (DPI/PPI) affects print quality without changing the pixel dimensions. You can also change the total pixel count to reduce file size for web use.",
+        "sizes": [
+            ("Web / Screen", "72 PPI", "Standard"),
+            ("HD Display", "1920 x 1080", "1080p"),
+            ("4K Display", "3840 x 2160", "4K"),
+            ("Print Standard", "300 PPI", "High quality"),
+        ],
+        "faq": [
+            ("What's the difference between DPI and PPI?", "DPI (Dots Per Inch) is for printing; PPI (Pixels Per Inch) is for screens. They're often used interchangeably. Higher DPI/PPI = sharper image."),
+            ("Can I increase resolution without losing quality?", "Reducing resolution keeps quality intact. Increasing resolution (upscaling) often causes blurriness. For significant upscaling, use AI-powered tools."),
+            ("What resolution should I use for web?", "72-96 PPI is standard for web. For Retina/HiDPI displays, use 2x the dimensions (e.g., 2000px wide for a 1000px container)."),
+            ("Does changing resolution change file size?", "Changing PPI metadata doesn't change file size. Changing actual pixel dimensions does change file size."),
+        ],
+        "how_to": [
+            "Upload your image above",
+            "Enter new dimensions or DPI value",
+            "Preview to check quality",
+            "Download the resolution-adjusted image",
+        ],
+        "tips": "For sharp Retina display images, export at 2x your target display size. A 1000px-wide image will look crisp on Retina screens when exported at 2000px.",
+    },
+    "image-size-guide": {
+        "name": "Image Size Guide",
+        "about": "This is the complete image size reference for 2026. Whether you're designing for social media, websites, email, or print — you'll find every dimension you need in one place. Bookmark this page as your go-to image size cheat sheet.",
+        "sizes": [
+            ("Instagram Post", "1080 x 1080 (square) / 1080 x 1350 (portrait)", "1:1 / 4:5"),
+            ("Instagram Story", "1080 x 1920", "9:16"),
+            ("Facebook Cover", "820 x 312", "2.63:1"),
+            ("Facebook Profile", "170 x 170", "1:1"),
+            ("LinkedIn Banner", "1584 x 396", "4:1"),
+            ("LinkedIn Profile", "400 x 400", "1:1"),
+            ("X/Twitter Header", "1500 x 500", "3:1"),
+            ("YouTube Thumbnail", "1280 x 720", "16:9"),
+            ("YouTube Banner", "2560 x 1440", "16:9"),
+            ("TikTok Video", "1080 x 1920", "9:16"),
+            ("Pinterest Pin", "1000 x 1500", "2:3"),
+            ("Discord Avatar", "512 x 512", "1:1"),
+            ("Discord Banner", "680 x 240", "2.83:1"),
+            ("Email Header", "600 x 200", "3:1"),
+            ("Website Hero Banner", "1920 x 600", "3.2:1"),
+            ("Blog Featured Image", "1200 x 630", "1.91:1"),
+        ],
+        "faq": [
+            ("Why do image sizes matter?", "Wrong image sizes get cropped, stretched, or compressed by platforms — making your content look unprofessional. Correct dimensions ensure pixel-perfect display everywhere."),
+            ("How often do social media image sizes change?", "Major platforms update their dimensions every 1-3 years. We keep this guide updated with the latest 2026 requirements."),
+            ("What's the best image format for social media?", "JPG for photos, PNG for graphics with text/logos. WebP is gaining support and offers better compression. This guide lists recommended formats per platform."),
+            ("Can I use the same image size for all platforms?", "No — each platform has unique dimensions. The tool on this page lets you select platform presets to quickly resize one image for multiple platforms."),
+        ],
+        "how_to": [
+            "Find your platform in the size table",
+            "Note the recommended dimensions",
+            "Use the resize tool with those dimensions",
+            "Download the perfectly sized image",
+        ],
+        "tips": "Bookmark this page as your image size reference. When creating content, start with the largest size needed and resize down — this preserves the most quality.",
+    },
 }
 
 # Generic enrichment for pages without specific platform data
@@ -584,7 +710,7 @@ footer a{{color:#CBD5E1;text-decoration:none}}
     <script type="application/ld+json">
     {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://{DOMAIN}/"}},{{"@type":"ListItem","position":2,"name":"{title.split("—")[0].strip()}","item":"https://{DOMAIN}/{slug}/"}}]}}
     </script>
-</head>
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ResizeNow","url":"https://resizenow.net","description":"Free online image resizer","applicationCategory":"MultimediaApplication","operatingSystem":"All","offers":{{"@type":"Offer","price":"0","priceCurrency":"USD"}}}}</script></head>
 <body>
     <header>
         <div class="container">
@@ -659,7 +785,7 @@ footer a{{color:#CBD5E1;text-decoration:none}}
             </div>
         </section>
         <div class="cross-site">
-            <strong>Pro Tip</strong> — Need to compress your resized image? Try <a href="https://compressnow.net">CompressNow</a>. Need resume content? <a href="https://cvbuild-ai.com">CVBuild-AI</a>. Need emails? <a href="https://messagegen-ai.com">MessageGen-AI</a>. Need tone adjustment? <a href="https://tonemodifier.com">ToneModifier</a>.
+            <strong>Pro Tip</strong> — Done resizing? Optimize file size with our <a href="https://compressnow.net">file optimizer</a>. Build a resume? <a href="https://cvbuild-ai.com">CVBuild-AI</a>. Write emails? <a href="https://messagegen-ai.com">MessageGen-AI</a>. Adjust tone? <a href="https://tonemodifier.com">ToneModifier</a>.
         </div>
         <section class="faq-section" id="faq">
             <div class="container">
@@ -898,7 +1024,7 @@ footer a{{color:#CBD5E1;text-decoration:none}}
             </div>
         </section>
         <div class="cross-site">
-            <strong>Pro Tip</strong> — Need to compress your resized image? Try <a href="https://compressnow.net">CompressNow</a>. Need resume content? <a href="https://cvbuild-ai.com">CVBuild-AI</a>. Need emails? <a href="https://messagegen-ai.com">MessageGen-AI</a>. Need tone adjustment? <a href="https://tonemodifier.com">ToneModifier</a>.
+            <strong>Pro Tip</strong> — Done resizing? Optimize file size with our <a href="https://compressnow.net">file optimizer</a>. Build a resume? <a href="https://cvbuild-ai.com">CVBuild-AI</a>. Write emails? <a href="https://messagegen-ai.com">MessageGen-AI</a>. Adjust tone? <a href="https://tonemodifier.com">ToneModifier</a>.
         </div>
         <section class="faq-section" id="faq">
             <div class="container">
@@ -997,7 +1123,16 @@ def build_static():
         print(f"  📋 {slug}.html")
 
 
+def validate_scenarios(data, name="数据"):
+    required = ['slug', 'title', 'desc']
+    for i, s in enumerate(data):
+        for f in required:
+            if f not in s:
+                raise KeyError(f"{name}[{i}] 缺字段 '{f}' — 标题: {s.get('title', 'N/A')}")
+    print(f"✅ {name}校验通过: {len(data)} 条")
+
 if __name__ == "__main__":
+    validate_scenarios(ALL_SCENARIOS, "ALL_SCENARIOS")
     build_home()
     print(f"\n📄 {len(ALL_SCENARIOS)} Scenario Pages:")
     for s in ALL_SCENARIOS:

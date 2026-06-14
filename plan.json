@@ -1,0 +1,14 @@
+{
+  "domain": "resizenow.net",
+  "stage": 2,
+  "stage_name": "成长",
+  "note": "2026-06-14 维护：522imp/5clk, CTR 0.96%, #20.9, 10/74页收录。已修复蚕食+新增6长尾页+内容深化。",
+  "actions": [
+    "去蚕食化：交叉链接从'image compressor'改为'file optimizer'",
+    "新增6个GSC驱动长尾页面（social-media-dimensions, printing, resolution等）",
+    "5个通用页标题差异化（不再全是'Free Online Tool'）",
+    "增强4个新类型的内容深度（FAQ+尺寸表+howto+tips）"
+  ],
+  "last_maintenance": "2026-06-14",
+  "priority": 35
+}
